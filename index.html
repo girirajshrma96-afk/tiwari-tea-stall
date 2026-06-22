@@ -22,6 +22,22 @@
             color:#fff;
             text-align:center;
             padding:25px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .logo{
+            width:80px;
+            height:80px;
+            background:#fff;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:40px;
         }
 
         header h1{
@@ -47,6 +63,12 @@
             background:#0b6b3a;
             text-decoration:none;
             border-radius:6px;
+            cursor:pointer;
+            transition:background 0.3s;
+        }
+
+        .btn:hover{
+            background:#084d2a;
         }
 
         section{
@@ -74,6 +96,41 @@
             text-align:center;
         }
 
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .gallery-item{
+            position:relative;
+            overflow:hidden;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,.15);
+            background:#e0e0e0;
+            min-height:250px;
+        }
+
+        .gallery-item img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            transition:transform 0.3s;
+        }
+
+        .gallery-item:hover img{
+            transform:scale(1.05);
+        }
+
+        .placeholder{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:100%;
+            font-size:60px;
+            background:#f0f0f0;
+        }
+
         footer{
             background:#222;
             color:white;
@@ -91,6 +148,11 @@
             border-radius:50%;
             text-decoration:none;
             font-size:22px;
+            transition:transform 0.3s;
+        }
+
+        .whatsapp:hover{
+            transform:scale(1.1);
         }
     </style>
 
@@ -99,83 +161,84 @@
 <body>
 
 <header>
-
-<h1>☕ Tiwari Tea Stall</h1>
-
-<p>Fresh Tea • Coffee • Grocery • Fresh Vegetables</p>
-
+    <div class="logo">☕</div>
+    <div>
+        <h1>Tiwari Tea Stall</h1>
+        <p>Fresh Tea • Coffee • Grocery • Fresh Vegetables</p>
+    </div>
 </header>
 
 <section class="hero">
-
-<h2>Welcome to Tiwari Tea Stall</h2>
-
-<p>Fresh Tea, Cold Drinks, Tasty Snacks & Daily Needs – All at One Place!</p>
-
-<br>
-
-<a class="btn" href="tel:9772320628">📞 Call Now</a>
-
-<a class="btn" href="https://wa.me/919772320628">💬 WhatsApp</a>
-
+    <h2>Welcome to Tiwari Tea Stall</h2>
+    <p>Fresh Tea, Cold Drinks, Tasty Snacks & Daily Needs – All at One Place!</p>
+    <br>
+    <a class="btn" href="tel:9772320628">📞 Call Now</a>
+    <a class="btn" href="https://wa.me/919772320628">💬 WhatsApp</a>
 </section>
 
 <section>
+    <h2>Our Menu</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>☕ Tea & Coffee</h3>
+            <p>Regular Tea, Masala Chai, Coffee</p>
+        </div>
 
-<h2>Our Menu</h2>
+        <div class="card">
+            <h3>🥤 Cold Drinks</h3>
+            <p>Coca-Cola, Pepsi, Sprite, Fanta, Thums Up</p>
+        </div>
 
-<div class="grid">
+        <div class="card">
+            <h3>🍟 Snacks</h3>
+            <p>Chips, Biscuits, Namkeen, Chocolates, Cakes, Maggi</p>
+        </div>
 
-<div class="card">
-<h3>☕ Tea & Coffee</h3>
-<p>Regular Tea, Masala Chai, Coffee</p>
-</div>
-
-<div class="card">
-<h3>🥤 Cold Drinks</h3>
-<p>Coca-Cola, Pepsi, Sprite, Fanta, Thums Up</p>
-</div>
-
-<div class="card">
-<h3>🍟 Snacks</h3>
-<p>Chips, Biscuits, Namkeen, Chocolates, Cakes, Maggi</p>
-</div>
-
-<div class="card">
-<h3>🛒 Grocery</h3>
-<p>Daily Grocery & Fresh Vegetables</p>
-</div>
-
-</div>
-
+        <div class="card">
+            <h3>🛒 Grocery</h3>
+            <p>Daily Grocery & Fresh Vegetables</p>
+        </div>
+    </div>
 </section>
 
 <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/shop-front.jpg" alt="Shop Front" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder" style="display:none;">🏪</div>
+        </div>
 
-<h2>Gallery</h2>
+        <div class="gallery-item">
+            <img src="images/tea-setup.jpg" alt="Tea Setup" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder" style="display:none;">☕</div>
+        </div>
 
-<p>Add your shop photos, logo and poster here.</p>
+        <div class="gallery-item">
+            <img src="images/snacks.jpg" alt="Snacks Display" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder" style="display:none;">🍟</div>
+        </div>
 
+        <div class="gallery-item">
+            <img src="images/vegetables.jpg" alt="Fresh Vegetables" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder" style="display:none;">🥬</div>
+        </div>
+    </div>
 </section>
 
 <section>
+    <h2>Contact Us</h2>
+    <p><strong>📍 Address:</strong><br>
+    Borawad Road, Nearby More Engineering Workshop,<br>
+    Borawad, Rajasthan - 341502</p>
 
-<h2>Contact Us</h2>
+    <br>
 
-<p><strong>📍 Address:</strong><br>
-Borawad Road, Nearby More Engineering Workshop,<br>
-Borawad, Rajasthan - 341502</p>
-
-<br>
-
-<p><strong>📞 Mobile:</strong> 9772320628</p>
-
+    <p><strong>📞 Mobile:</strong> 9772320628</p>
 </section>
 
 <footer>
-
-© 2026 Tiwari Tea Stall | All Rights Reserved
-
+    © 2026 Tiwari Tea Stall | All Rights Reserved
 </footer>
 
 <a class="whatsapp" href="https://wa.me/919772320628">💬</a>
