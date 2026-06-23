@@ -1,247 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiwari Tea Stall | Borawad</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiwari Tea Stall | Fresh Tea & Daily Needs</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial,sans-serif;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        body{
-            background:#f8f8f8;
-        }
+<link rel="stylesheet" href="style.css">
 
-        header{
-            background:#0b6b3a;
-            color:#fff;
-            text-align:center;
-            padding:25px;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            gap:20px;
-            flex-wrap:wrap;
-        }
-
-        .logo{
-            width:80px;
-            height:80px;
-            background:#fff;
-            border-radius:50%;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-size:40px;
-        }
-
-        header h1{
-            font-size:38px;
-        }
-
-        .hero{
-            text-align:center;
-            padding:40px 20px;
-            background:#fff;
-        }
-
-        .hero h2{
-            color:#0b6b3a;
-            margin-bottom:15px;
-        }
-
-        .btn{
-            display:inline-block;
-            margin:10px;
-            padding:12px 22px;
-            color:#fff;
-            background:#0b6b3a;
-            text-decoration:none;
-            border-radius:6px;
-            cursor:pointer;
-            transition:background 0.3s;
-        }
-
-        .btn:hover{
-            background:#084d2a;
-        }
-
-        section{
-            max-width:1100px;
-            margin:auto;
-            padding:40px 20px;
-        }
-
-        h2{
-            color:#0b6b3a;
-            margin-bottom:20px;
-        }
-
-        .grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-            gap:20px;
-        }
-
-        .card{
-            background:#fff;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 2px 8px rgba(0,0,0,.15);
-            text-align:center;
-        }
-
-        .gallery{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:20px;
-        }
-
-        .gallery-item{
-            position:relative;
-            overflow:hidden;
-            border-radius:10px;
-            box-shadow:0 2px 8px rgba(0,0,0,.15);
-            background:#e0e0e0;
-            min-height:250px;
-        }
-
-        .gallery-item img{
-            width:100%;
-            height:100%;
-            object-fit:cover;
-            transition:transform 0.3s;
-        }
-
-        .gallery-item:hover img{
-            transform:scale(1.05);
-        }
-
-        .placeholder{
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            height:100%;
-            font-size:60px;
-            background:#f0f0f0;
-        }
-
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-
-        .whatsapp{
-            position:fixed;
-            bottom:20px;
-            right:20px;
-            background:#25D366;
-            color:white;
-            padding:15px;
-            border-radius:50%;
-            text-decoration:none;
-            font-size:22px;
-            transition:transform 0.3s;
-        }
-
-        .whatsapp:hover{
-            transform:scale(1.1);
-        }
-    </style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
 <header>
-    <div class="logo">☕</div>
-    <div>
-        <h1>Tiwari Tea Stall</h1>
-        <p>Fresh Tea • Coffee • Grocery • Fresh Vegetables</p>
-    </div>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-mug-hot"></i>
+Tiwari Tea Stall
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
 </header>
 
-<section class="hero">
-    <h2>Welcome to Tiwari Tea Stall</h2>
-    <p>Fresh Tea, Cold Drinks, Tasty Snacks & Daily Needs – All at One Place!</p>
-    <br>
-    <a class="btn" href="tel:9772320628">📞 Call Now</a>
-    <a class="btn" href="https://wa.me/919772320628">💬 WhatsApp</a>
+<section class="hero" id="home">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Fresh Tea With Amazing Taste</h1>
+
+<p>
+Tea • Coffee • Groceries • Fresh Vegetables
+</p>
+
+<a href="#contact" class="btn">
+Visit Our Store
+</a>
+
+</div>
+
 </section>
 
-<section>
-    <h2>Our Menu</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>☕ Tea & Coffee</h3>
-            <p>Regular Tea, Masala Chai, Coffee</p>
-        </div>
+<section id="about" class="about">
 
-        <div class="card">
-            <h3>🥤 Cold Drinks</h3>
-            <p>Coca-Cola, Pepsi, Sprite, Fanta, Thums Up</p>
-        </div>
+<div class="container">
 
-        <div class="card">
-            <h3>🍟 Snacks</h3>
-            <p>Chips, Biscuits, Namkeen, Chocolates, Cakes, Maggi</p>
-        </div>
+<div class="about-image">
 
-        <div class="card">
-            <h3>🛒 Grocery</h3>
-            <p>Daily Grocery & Fresh Vegetables</p>
-        </div>
-    </div>
+<img src="images/shop.jpg" alt="Tea Stall">
+
+</div>
+
+<div class="about-text">
+
+<h2>About Us</h2>
+
+<p>
+
+Welcome to <b>Tiwari Tea Stall</b>.
+
+We proudly serve fresh tea, coffee,
+groceries, vegetables and daily need
+items with quality and trust.
+
+Our goal is to provide every customer
+with fresh products at affordable prices.
+
+</p>
+
+<div class="features">
+
+<div>
+
+<i class="fa-solid fa-mug-hot"></i>
+
+<h4>Fresh Tea</h4>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-carrot"></i>
+
+<h4>Fresh Vegetables</h4>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-basket-shopping"></i>
+
+<h4>Groceries</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- SERVICES SECTION -->
+
+<section id="services" class="services">
+
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Everything You Need at One Place</p>
+</div>
+
+<div class="service-container">
+
+<div class="service-card">
+<i class="fa-solid fa-mug-hot"></i>
+<h3>Fresh Tea</h3>
+<p>Hot and refreshing tea prepared with quality ingredients every day.</p>
+</div>
+
+<div class="service-card">
+<i class="fa-solid fa-mug-saucer"></i>
+<h3>Coffee</h3>
+<p>Strong and delicious coffee to refresh your day.</p>
+</div>
+
+<div class="service-card">
+<i class="fa-solid fa-basket-shopping"></i>
+<h3>Groceries</h3>
+<p>Daily grocery items available at affordable prices.</p>
+</div>
+
+<div class="service-card">
+<i class="fa-solid fa-carrot"></i>
+<h3>Fresh Vegetables</h3>
+<p>Fresh vegetables delivered daily with quality assurance.</p>
+</div>
+
+</div>
+
 </section>
 
-<section>
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="images/shop-front.jpg" alt="Shop Front" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="placeholder" style="display:none;">🏪</div>
-        </div>
+<!-- GALLERY -->
 
-        <div class="gallery-item">
-            <img src="images/tea-setup.jpg" alt="Tea Setup" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="placeholder" style="display:none;">☕</div>
-        </div>
+<section id="gallery" class="gallery">
 
-        <div class="gallery-item">
-            <img src="images/snacks.jpg" alt="Snacks Display" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="placeholder" style="display:none;">🍟</div>
-        </div>
+<div class="section-title">
+<h2>Gallery</h2>
+<p>Our Store & Products</p>
+</div>
 
-        <div class="gallery-item">
-            <img src="images/vegetables.jpg" alt="Fresh Vegetables" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="placeholder" style="display:none;">🥬</div>
-        </div>
-    </div>
+<div class="gallery-container">
+
+<img src="images/tea1.jpg" alt="">
+<img src="images/tea2.jpg" alt="">
+<img src="images/shop.jpg" alt="">
+<img src="images/tea3.jpg" alt="">
+<img src="images/tea4.jpg" alt="">
+<img src="images/tea5.jpg" alt="">
+
+</div>
+
 </section>
 
-<section>
-    <h2>Contact Us</h2>
-    <p><strong>📍 Address:</strong><br>
-    Borawad Road, Nearby More Engineering Workshop,<br>
-    Borawad, Rajasthan - 341502</p>
+<!-- TESTIMONIAL -->
 
-    <br>
+<section class="testimonial">
 
-    <p><strong>📞 Mobile:</strong> 9772320628</p>
+<div class="section-title">
+<h2>Customer Reviews</h2>
+</div>
+
+<div class="review-box">
+
+<p>
+⭐⭐⭐⭐⭐
+</p>
+
+<p>
+
+"Best tea in the area.
+Very friendly owner and
+excellent service."
+
+</p>
+
+<h4>- Happy Customer</h4>
+
+</div>
+
 </section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<div class="section-title">
+<h2>Contact Us</h2>
+</div>
+
+<div class="contact-box">
+
+<h3>Tiwari Tea Stall</h3>
+
+<p>
+Owner : Mohan Lal Tiwari
+</p>
+
+<p>
+📞 9772320628
+</p>
+
+<p>
+📍 Borawad Road,
+Nearby More Iron Engineering
+</p>
+
+<a href="tel:9772320628" class="btn">
+Call Now
+</a>
+
+<a href="https://wa.me/919772320628" class="btn whatsapp">
+WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
 
 <footer>
-    © 2026 Tiwari Tea Stall | All Rights Reserved
+
+<p>
+© 2026 Tiwari Tea Stall
+All Rights Reserved.
+</p>
+
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919772320628">💬</a>
+<script src="script.js"></script>
 
 </body>
 </html>
